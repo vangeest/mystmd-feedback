@@ -20,14 +20,8 @@ project:
       children:
         - pattern: 2-webshop/*-*.md
     - file: 3-gdevelop/_gdevelop.md
-      #children:
-        #- pattern: 3-gdevelop/*-*.md
-    - file: 10-help/_help.md
       children:
-        - pattern: 10-help/*-*.md
-    - file: 100-docenten/_docenten.md
-      children:
-        - pattern: 100-docenten/*-*.md
+        - pattern: 3-gdevelop/*-*.md
 
 site:
   template: book-theme
