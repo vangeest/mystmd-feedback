@@ -3,7 +3,7 @@ version: 1
 project:
   id: f4b93bd6-ffe3-44bc-9231-9f5d0f8c1d71
   license: MIT
-  title: "Informatica"
+  title: "book-title-yml"
   description: "Informatica-opdrachten voor leerlingen van het Stanislascollege Westplantsoen in Delft"
   keywords: ["informatica","python","sql"]
   # authors: ["Sander van Geest"] # this is displayed on the top of every page
@@ -11,18 +11,36 @@ project:
 
   # To autogenerate a Table of Contents, run "myst init --write-toc"  
   # a toc is neccessary to show root-pages
-  toc:
-    - file: _informatica.md
-    - file: 1-game/_game.md
-      children:
-        - pattern: 1-game/*-*.md
-    - file: 2-webshop/_webshop.md
-      children:
-        - pattern: 2-webshop/*-*.md
-    - file: 3-gdevelop/_gdevelop.md
-      children:
-        - pattern: 3-gdevelop/*-*.md
+  
 
+  toc:
+    - file: _book-file.md
+    - title: Chapter-A-title-yml
+      file: chapter-A-dir/_chapter-A-file.md
+      children:
+        - file: chapter-A-dir/section-A-1-file.md
+        - file: chapter-A-dir/section-A-2-file.md
+    - title:  Chapter-B-title-yml
+      file: chapter-B-dir/_chapter-B-file.md
+      children:
+        - file: chapter-B-dir/section-B-1-file.md
+        - file: chapter-B-dir/section-B-2-file.md
+
+  numbering:
+    title:
+      enabled: true
+    heading_1:
+      enabled: true
+    heading_2:
+      enabled: true
+    heading_3:
+      enabled: true
+    heading_4:
+      enabled: true 
+    heading_5:
+      enabled: true
+    heading_6:
+      enabled: true
 site:
   template: book-theme
   options:
